@@ -1,0 +1,143 @@
+@import "reset.css";
+
+body {
+  background-color: rgb(39, 45, 61);
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.clicked {
+  color: #7a8c8d;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.js-form-div,
+.js-clock,
+.js-toDo,
+.js-toDo__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.js-clock {
+  font-size: 150px;
+  margin-top: 20vh;
+  margin-bottom: 5vh;
+}
+
+.js-clock h1 {
+  padding-bottom: 20px;
+  border-bottom: solid 5px rgba(255, 255, 255, 0.1);
+}
+
+.js-form__input,
+.js-toDo__input {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: solid 3px rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.js-form__input {
+  width: 300px;
+  height: 40px;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.js-form__input::placeholder,
+.js-toDo__input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+  text-align: center;
+}
+
+.js-greetings {
+  font-size: 50px;
+  font-style: italic;
+  border-bottom: solid 3px rgba(255, 255, 255, 0.3);
+  animation: fadeIn 2s linear;
+}
+
+.js-toDo {
+  margin-top: 30px;
+}
+
+.js-toDo__input {
+  width: 200px;
+  height: 30px;
+  font-size: 25px;
+}
+
+.js-toDo__list {
+  margin-top: 10px;
+  animation: fadeIn 1s linear;
+  position: relative;
+}
+
+.js-toDoList {
+  position: absolute;
+  top: 10px;
+}
+
+.js-toDoList li {
+  animation: fadeIn 1s linear;
+}
+
+.js-toDoList li span {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+
+button {
+  margin-right: 5px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 20px;
+  outline: none;
+}
+
+.js-weather {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 32px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 3px;
+  font-size: 30px;
+  font-style: italic;
+}
