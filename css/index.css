@@ -55,6 +55,7 @@ body {
   font-size: 150px;
   margin-top: 20vh;
   margin-bottom: 5vh;
+  cursor: none;
 }
 
 .js-clock h1 {
@@ -89,6 +90,7 @@ body {
   font-style: italic;
   border-bottom: solid 3px rgba(255, 255, 255, 0.3);
   animation: fadeIn 2s linear;
+  cursor: none;
 }
 
 .js-toDo {
@@ -119,6 +121,7 @@ body {
 .js-toDoList li span {
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 5px;
+  cursor: none;
 }
 
 button {
@@ -127,6 +130,7 @@ button {
   background-color: rgba(0, 0, 0, 0);
   font-size: 20px;
   outline: none;
+  cursor: pointer;
 }
 button:active {
   transform: scale(0.98);
@@ -143,4 +147,5 @@ button:active {
   border-radius: 3px;
   font-size: 30px;
   font-style: italic;
+  cursor: none;
 }
