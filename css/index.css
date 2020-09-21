@@ -55,7 +55,7 @@ body {
   font-size: 150px;
   margin-top: 20vh;
   margin-bottom: 5vh;
-  cursor: none;
+  cursor: default;
 }
 
 .js-clock h1 {
@@ -90,7 +90,7 @@ body {
   font-style: italic;
   border-bottom: solid 3px rgba(255, 255, 255, 0.3);
   animation: fadeIn 2s linear;
-  cursor: none;
+  cursor: default;
 }
 
 .js-toDo {
@@ -121,7 +121,7 @@ body {
 .js-toDoList li span {
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 5px;
-  cursor: none;
+  cursor: default;
 }
 
 button {
@@ -147,5 +147,5 @@ button:active {
   border-radius: 3px;
   font-size: 30px;
   font-style: italic;
-  cursor: none;
+  cursor: default;
 }
